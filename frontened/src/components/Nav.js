@@ -9,6 +9,7 @@ function Nav() {
         <li><Link to="/update">Upadate Products</Link></li>
         <li><Link to="/logout">Logout</Link></li>
         <li><Link to="/profile">Profile</Link></li>
+        <li><Link to="/Signup">Register</Link></li>
       </ul>
     </div>
   )
