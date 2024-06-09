@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
+import { useEffect } from 'react';
 function Signup() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  
+
   const navigate=useNavigate();
+  useEffect(()=>{
+    const auth=localStorage.getItem('user');
+    if(auth){
+      navigate('/');
+    }
+  })
 
   const collectData=async ()=>{
     console.log(name,email,password);
@@ -18,6 +27,7 @@ function Signup() {
     });
     result=await result.json();
     console.warn(result);
+    localStorage.setItem("user",JSON.stringify(result));
     if(result){
    navigate('/');
     }
