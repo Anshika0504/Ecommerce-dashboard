@@ -81,6 +81,9 @@
   margin-top: 20px;
 
 }
+.nav-right{
+  text-align: right;
+}
 .btn{
   margin: 25px;
   padding: 10px;
@@ -91,5 +94,12 @@
   cursor: pointer;
   margin-left: 100px;
   margin-top: 20px;
+
+}
+.logo{
+  width:100px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 20px;
 
 }
