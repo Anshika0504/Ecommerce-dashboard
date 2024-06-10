@@ -55,7 +55,7 @@
   width: 100%;
   background-color: #61dafb;
 }
-.register{
+.register,.product{
   margin-left: 30%;
 }
 .register h1{
